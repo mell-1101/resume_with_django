@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}My Resume{% endblock %}</title>
+
+    <!-- web-fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet">
+
+    <!-- font-awesome -->
+    <link href="{% static 'resume/css/font-awesome.min.css' %}" rel="stylesheet">
+
+    <!-- Bootstrap 5 -->
+    <link href="{% static 'resume/css/vendor/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Style CSS -->
+    <link href="{% static 'resume/css/style.css' %}" rel="stylesheet">
+    <link href="{% static 'resume/css/onlinecv-bs5.css' %}" rel="stylesheet">
+    <link href="{% static 'resume/css/onlinecv-modern.css' %}" rel="stylesheet">
+</head>
+<body>
+
+    {% block content %}
+    {% endblock %}
+
+</body>
+</html>
